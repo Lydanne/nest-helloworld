@@ -1,10 +1,10 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Inject } from '@nestjs/common';
 
 @Controller('user')
 export class UserController {
-
   @Get()
   async user () {
-    return '这是一个user api'
+    return '这是一个user api';
   }
+
 }
